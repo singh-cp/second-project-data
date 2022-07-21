@@ -38,7 +38,9 @@ Show Me Around is a platform where travelers from around the world hire local pe
 
 ### Filter - Profiles based on Cost (less than, more than, and range)
 
-> https://show-me-around-api.herokuapp.com/filter/2?hcost=1200 > https://show-me-around-api.herokuapp.com/filter/2?lcost=500 > https://show-me-around-api.herokuapp.com/filter/2?hcost=1900&lcost=1400
+> https://show-me-around-api.herokuapp.com/filter/2?hcost=1200
+> https://show-me-around-api.herokuapp.com/filter/2?lcost=500
+> https://show-me-around-api.herokuapp.com/filter/2?hcost=1900&lcost=1400
 
 ### Filter - Profiles based on Interest (available interest_id = [1,2,3,4,5,6,7])
 
