@@ -38,9 +38,9 @@ Show Me Around is a platform where travelers from around the world hire local pe
 
 ### Filter - Profiles based on Cost (less than, more than, and range)
 
-> https://show-me-around-api.herokuapp.com/filter/2?hcost=1200
-> https://show-me-around-api.herokuapp.com/filter/2?lcost=500
-> https://show-me-around-api.herokuapp.com/filter/2?hcost=1900&lcost=1400
+> https://show-me-around-api.herokuapp.com/filter/2?hcost=1200 <br>
+> https://show-me-around-api.herokuapp.com/filter/2?lcost=500 <br>
+> https://show-me-around-api.herokuapp.com/filter/2?hcost=1900&lcost=1400 <br>
 
 ### Filter - Profiles based on Interest (available interest_id = [1,2,3,4,5,6,7])
 
@@ -56,9 +56,9 @@ Show Me Around is a platform where travelers from around the world hire local pe
 
 ### Filter - Sorting based on Rating & Cost (Default sorting is Highest Rating profiles on the top)
 
-> https://show-me-around-api.herokuapp.com/filter/3?sortRating=1
-> https://show-me-around-api.herokuapp.com/filter/3?sortCost=1
-> https://show-me-around-api.herokuapp.com/filter/3?sortCost=-1
+> https://show-me-around-api.herokuapp.com/filter/3?sortRating=1 <br>
+> https://show-me-around-api.herokuapp.com/filter/3?sortCost=1 <br>
+> https://show-me-around-api.herokuapp.com/filter/3?sortCost=-1 <br>
 
 ## Page 3
 
