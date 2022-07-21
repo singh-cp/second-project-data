@@ -54,7 +54,9 @@ Show Me Around is a platform where travelers from around the world hire local pe
 
 ### Filter - Sorting based on Rating & Cost (Default sorting is Highest Rating profiles on the top)
 
-> https://show-me-around-api.herokuapp.com/filter/3?sortRating=1 > https://show-me-around-api.herokuapp.com/filter/3?sortCost=1 > https://show-me-around-api.herokuapp.com/filter/3?sortCost=-1
+> https://show-me-around-api.herokuapp.com/filter/3?sortRating=1
+> https://show-me-around-api.herokuapp.com/filter/3?sortCost=1
+> https://show-me-around-api.herokuapp.com/filter/3?sortCost=-1
 
 ## Page 3
 
