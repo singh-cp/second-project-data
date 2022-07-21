@@ -19,12 +19,7 @@ app.use(cors());
 
 // Home Page
 app.get("/", (req, res) => {
-  let key = req.header("x-auth-key");
-  if (process.env.API_KEY == key) {
-    res.send("Hello from Express");
-  } else {
-    res.send("Unauthorized Request");
-  }
+  res.send("Hello from Express");
 });
 
 // Get all the locations
