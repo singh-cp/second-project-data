@@ -1,7 +1,7 @@
 # Show Me Around API url
 > https://show-me-around-api.herokuapp.com/
 
-##### page 1
+##### Page 1
 ## All locations
 > https://show-me-around-api.herokuapp.com/location
 ## All cities based on States (available state_id = [1,2,3])
@@ -9,7 +9,7 @@
 ## All Profiles
 > https://show-me-around-api.herokuapp.com/profiles
 
-// Page 2
+##### Page 2
 ## All profiles based on Cities (available city_id = [1,2,3,4,5])
 > https://show-me-around-api.herokuapp.com/profiles/1
 ## filters - Profiles based on only city
@@ -33,22 +33,22 @@
 > https://show-me-around-api.herokuapp.com/filter/3?sortCost=1
 
 
-// Page 3
+##### Page 3
 ## Individual profiles Details (available profile_id = [1,2,3.....14,15])
 > https://show-me-around-api.herokuapp.com/profile/5
 
 
-// Page 4
+##### Page 4
 ## See All bookings
 > https://show-me-around-api.herokuapp.com/bookings/
 ## See bookings based on individual profile (available profile_id = [9,8,12,15])
 > https://show-me-around-api.herokuapp.com/bookings/15
 
-// Page 5
+##### Page 5
 ## Create a new booking (this link require authentication) 
 > https://show-me-around-api.herokuapp.com/booklocal (POST)
-// x-auth-key = 1fb15da6d3d8efb7f774b58884d649e9
-// Use below data for testing
+x-auth-key = 1fb15da6d3d8efb7f774b58884d649e9
+Use below data for testing
 {
     "booking_id": 6,
     "travel_date": "12/25/2022",
@@ -70,7 +70,7 @@
     ]
   }
 
-// Page 6
+##### Page 6
 ## Update payment status based on booking id (Use booking_id 6 for testing purposes, authentication required)
 > https://show-me-around-api.herokuapp.com/updateBooking/6 (PUT)
 // x-auth-key = 1fb15da6d3d8efb7f774b58884d649e9
@@ -80,7 +80,7 @@
 "payment_status": "TXN_SUCCESS"
 }
 
-// Page 7
+##### Page 7
 
 ## Delete Booking based on booking id (Use booking_id 6 for testing purposes, authentication required)
 > https://show-me-around-api.herokuapp.com/deleteBooking/6 (DELETE)
