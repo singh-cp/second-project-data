@@ -239,7 +239,7 @@ app.put("/updateBooking/:id", (req, res) => {
       },
       (err, result) => {
         if (err) throw err;
-        res.send("Order Updated");
+        res.send("Booking Updated");
       }
     );
   } else {
@@ -249,13 +249,13 @@ app.put("/updateBooking/:id", (req, res) => {
 
 // Delete order based on order id - UNCHECKED
 
-app.delete("/deleteOrder/:id", (req, res) => {
+app.delete("/deleteBooking/:id", (req, res) => {
   let key = req.header("x-auth-key");
   let id = Number(req.params.id);
   if (process.env.API_KEY == key) {
     db.collection("booking").remove({ booking_id: id }, (err, result) => {
       if (err) throw err;
-      res.send("Order Deleted");
+      res.send("Booking Deleted");
     });
   } else {
     res.send("Unauthorized Request");

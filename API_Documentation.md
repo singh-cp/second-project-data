@@ -25,6 +25,9 @@
 # filter - Profiles based on language (available language_id = [1,2,3,4,5,6,7,8])
 > https://show-me-around-api.herokuapp.com/filter/3?languageId=6
 
+# filter - Profiles based on interest and language
+> https://show-me-around-api.herokuapp.com/filter/5?languageId=6&interestId=4
+
 # filter - Sorting based on Rating & Cost (Default sorting is Highest Rating profiles on the top)
 > https://show-me-around-api.herokuapp.com/filter/3?sortRating=1
 > https://show-me-around-api.herokuapp.com/filter/3?sortCost=1
@@ -33,3 +36,45 @@
 // Page 3
 # Individual profiles Details (available profile_id = [1,2,3.....14,15])
 > https://show-me-around-api.herokuapp.com/profile/5
+
+// Page 4
+# Create a new booking (this link require authentication) 
+> https://show-me-around-api.herokuapp.com/booklocal (POST)
+// x-auth-key = 1fb15da6d3d8efb7f774b58884d649e9
+// Use below data for testing
+{
+    "booking_id": 6,
+    "travel_date": "12/25/2022",
+    "price": 1260,
+    "booking_status": "Pending",
+    "local_info": [
+      {
+        "local_id": 10,
+        "local_email": "iamlocal10@gmail.com",
+        "local_contact": 1010101010
+      }
+    ],
+    "traveller_info": [
+      {
+        "traveler_id": 1,
+        "traveller_email": "iamlocal1@gmail.com",
+        "traveller_contact": 1111111111
+      }
+    ]
+  }
+
+// Page 5
+# Update payment status based on booking id (Use booking_id 6 for testing purposes, authentication required)
+> https://show-me-around-api.herokuapp.com/updateBooking/6 (PUT)
+// x-auth-key = 1fb15da6d3d8efb7f774b58884d649e9
+// Use below data for testing
+{
+"bank_name": "HDFC BANK",
+"payment_status": "TXN_SUCCESS"
+}
+
+// Page 6
+
+# Delete Booking based on booking id (Use booking_id 6 for testing purposes, authentication required)
+> https://show-me-around-api.herokuapp.com/deleteBooking/6 (DELETE)
+// x-auth-key = 1fb15da6d3d8efb7f774b58884d649e9
