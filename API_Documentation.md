@@ -47,8 +47,8 @@
 ##### Page 5
 ## Create a new booking (this link require authentication) 
 > https://show-me-around-api.herokuapp.com/booklocal (POST)
-x-auth-key = 1fb15da6d3d8efb7f774b58884d649e9
-Use below data for testing
+- x-auth-key = 1fb15da6d3d8efb7f774b58884d649e9
+- Use below data for testing
 {
     "booking_id": 6,
     "travel_date": "12/25/2022",
