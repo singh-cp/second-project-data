@@ -1,44 +1,51 @@
-# API url
+# Show Me Around API url
 > https://show-me-around-api.herokuapp.com/
 
-// page 1
-# All locations
+##### page 1
+## All locations
 > https://show-me-around-api.herokuapp.com/location
-# All cities based on States (available state_id = [1,2,3])
+## All cities based on States (available state_id = [1,2,3])
 > https://show-me-around-api.herokuapp.com/location/1
-# All Profiles
+## All Profiles
 > https://show-me-around-api.herokuapp.com/profiles
 
 // Page 2
-# All profiles based on Cities (available city_id = [1,2,3,4,5])
+## All profiles based on Cities (available city_id = [1,2,3,4,5])
 > https://show-me-around-api.herokuapp.com/profiles/1
-# filters - Profiles based on only city
+## filters - Profiles based on only city
 > https://show-me-around-api.herokuapp.com/filter/2
-# filter - Profiles based on cost (less than, more than, and range)
+## filter - Profiles based on cost (less than, more than, and range)
 > https://show-me-around-api.herokuapp.com/filter/2?hcost=1200
 > https://show-me-around-api.herokuapp.com/filter/2?lcost=500
 > https://show-me-around-api.herokuapp.com/filter/2?hcost=1900&lcost=1400
 
-# filter - Profiles based on interest (available interest_id = [1,2,3,4,5,6,7])
+## filter - Profiles based on interest (available interest_id = [1,2,3,4,5,6,7])
 > https://show-me-around-api.herokuapp.com/filter/1?interestId=4
 
-# filter - Profiles based on language (available language_id = [1,2,3,4,5,6,7,8])
+## filter - Profiles based on language (available language_id = [1,2,3,4,5,6,7,8])
 > https://show-me-around-api.herokuapp.com/filter/3?languageId=6
 
-# filter - Profiles based on interest and language
+## filter - Profiles based on interest and language
 > https://show-me-around-api.herokuapp.com/filter/5?languageId=6&interestId=4
 
-# filter - Sorting based on Rating & Cost (Default sorting is Highest Rating profiles on the top)
+## filter - Sorting based on Rating & Cost (Default sorting is Highest Rating profiles on the top)
 > https://show-me-around-api.herokuapp.com/filter/3?sortRating=1
 > https://show-me-around-api.herokuapp.com/filter/3?sortCost=1
 
 
 // Page 3
-# Individual profiles Details (available profile_id = [1,2,3.....14,15])
+## Individual profiles Details (available profile_id = [1,2,3.....14,15])
 > https://show-me-around-api.herokuapp.com/profile/5
 
+
 // Page 4
-# Create a new booking (this link require authentication) 
+## See All bookings
+> https://show-me-around-api.herokuapp.com/bookings/
+## See bookings based on individual profile (available profile_id = [9,8,12,15])
+> https://show-me-around-api.herokuapp.com/bookings/15
+
+// Page 5
+## Create a new booking (this link require authentication) 
 > https://show-me-around-api.herokuapp.com/booklocal (POST)
 // x-auth-key = 1fb15da6d3d8efb7f774b58884d649e9
 // Use below data for testing
@@ -63,8 +70,8 @@
     ]
   }
 
-// Page 5
-# Update payment status based on booking id (Use booking_id 6 for testing purposes, authentication required)
+// Page 6
+## Update payment status based on booking id (Use booking_id 6 for testing purposes, authentication required)
 > https://show-me-around-api.herokuapp.com/updateBooking/6 (PUT)
 // x-auth-key = 1fb15da6d3d8efb7f774b58884d649e9
 // Use below data for testing
@@ -73,8 +80,8 @@
 "payment_status": "TXN_SUCCESS"
 }
 
-// Page 6
+// Page 7
 
-# Delete Booking based on booking id (Use booking_id 6 for testing purposes, authentication required)
+## Delete Booking based on booking id (Use booking_id 6 for testing purposes, authentication required)
 > https://show-me-around-api.herokuapp.com/deleteBooking/6 (DELETE)
 // x-auth-key = 1fb15da6d3d8efb7f774b58884d649e9

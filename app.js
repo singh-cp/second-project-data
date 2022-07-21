@@ -247,7 +247,7 @@ app.put("/updateBooking/:id", (req, res) => {
   }
 });
 
-// Delete order based on order id - UNCHECKED
+// Delete order based on order id
 
 app.delete("/deleteBooking/:id", (req, res) => {
   let key = req.header("x-auth-key");
