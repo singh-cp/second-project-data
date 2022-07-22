@@ -7,8 +7,8 @@ Show Me Around is a platform where travelers from around the world hire local pe
 - The API uses **Node Js** on the backend.
 - API uses **MongoDB** for database.
 - POST, PUT & DELETE requests are protected, whereas GET request doesn't require authentication.
-- Please use `x-auth-key` as the key, and `1fb15da6d3d8efb7f774b58884d649e9` as value in headers for **protected/authenticated** routes.
 - Use tools such as **POSTMAN** for simplifying POST, PUT & DELETE requests.
+- Please use `x-auth-key` as the key, and `1fb15da6d3d8efb7f774b58884d649e9` as value in the header for **protected/authenticated** routes.
 
 ---
 
@@ -38,13 +38,13 @@ Show Me Around is a platform where travelers from around the world hire local pe
 
 ### Filter - Profiles based on Cost (less than, more than, and range)
 
-> https://show-me-around-api.herokuapp.com/filter/2?hcost=1200 <br>
-> https://show-me-around-api.herokuapp.com/filter/2?lcost=500 <br>
-> https://show-me-around-api.herokuapp.com/filter/2?hcost=1900&lcost=1400 <br>
+> https://show-me-around-api.herokuapp.com/filter/2?hcost=700 <br>
+> https://show-me-around-api.herokuapp.com/filter/2?lcost=1400 <br>
+> https://show-me-around-api.herokuapp.com/filter/2?hcost=1500&lcost=499 <br>
 
 ### Filter - Profiles based on Interest (available interest_id = [1,2,3,4,5,6,7])
 
-> https://show-me-around-api.herokuapp.com/filter/1?interestId=4
+> https://show-me-around-api.herokuapp.com/filter/3?interestId=4
 
 ### Filter - Profiles based on Language (available language_id = [1,2,3,4,5,6,7,8])
 
@@ -82,7 +82,7 @@ Show Me Around is a platform where travelers from around the world hire local pe
 
 > https://show-me-around-api.herokuapp.com/booklocal **(POST)**
 
-- x-auth-key : 1fb15da6d3d8efb7f774b58884d649e9
+- `x-auth-key : 1fb15da6d3d8efb7f774b58884d649e9`
 - Use below data for testing <br>
   `{
   "booking_id": 6,
@@ -111,7 +111,7 @@ Show Me Around is a platform where travelers from around the world hire local pe
 
 > https://show-me-around-api.herokuapp.com/updateBooking/6 **(PUT)**
 
-- x-auth-key : 1fb15da6d3d8efb7f774b58884d649e9
+- `x-auth-key : 1fb15da6d3d8efb7f774b58884d649e9`
 - Use below data for testing <br>
   `{
   "bank_name": "HDFC BANK",
@@ -122,7 +122,7 @@ Show Me Around is a platform where travelers from around the world hire local pe
 
 ### Delete Booking based on booking id (Use booking_id 6 for testing purposes, AUTHENTICATION required)
 
-- x-auth-key : 1fb15da6d3d8efb7f774b58884d649e9
+- `x-auth-key : 1fb15da6d3d8efb7f774b58884d649e9`
   > https://show-me-around-api.herokuapp.com/deleteBooking/6 **(DELETE)**
 
 ---

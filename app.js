@@ -111,38 +111,38 @@ app.get("/filter/:cityId", (req, res) => {
       city_id: cityId,
       "languages.language_id": languageId,
       "interest.interest_id": interestId,
-      $and: [{ price: { $gt: lcost, $lt: hcost } }],
+      $and: [{ price: { $gte: lcost, $lte: hcost } }],
     };
   } else if (cityId && interestId && lcost && hcost) {
     query = {
       city_id: cityId,
       "interest.interest_id": interestId,
-      $and: [{ price: { $gt: lcost, $lt: hcost } }],
+      $and: [{ price: { $gte: lcost, $lte: hcost } }],
     };
   } else if (cityId && languageId && lcost && hcost) {
     query = {
       city_id: cityId,
       "languages.language_id": languageId,
-      $and: [{ price: { $gt: lcost, $lt: hcost } }],
+      $and: [{ price: { $gte: lcost, $lte: hcost } }],
     };
   } else if (cityId && languageId && interestId && lcost) {
     query = {
       city_id: cityId,
       "languages.language_id": languageId,
       "interest.interest_id": interestId,
-      $and: [{ price: { $gt: lcost } }],
+      $and: [{ price: { $gte: lcost } }],
     };
   } else if (cityId && languageId && interestId && hcost) {
     query = {
       city_id: cityId,
       "languages.language_id": languageId,
       "interest.interest_id": interestId,
-      $and: [{ price: { $lt: hcost } }],
+      $and: [{ price: { $lte: hcost } }],
     };
   } else if (cityId && lcost && hcost) {
     query = {
       city_id: cityId,
-      $and: [{ price: { $gt: lcost, $lt: hcost } }],
+      $and: [{ price: { $gte: lcost, $lte: hcost } }],
     };
   } else if (cityId && languageId && interestId) {
     query = {
@@ -153,12 +153,12 @@ app.get("/filter/:cityId", (req, res) => {
   } else if (cityId && hcost) {
     query = {
       city_id: cityId,
-      $and: [{ price: { $lt: hcost } }],
+      $and: [{ price: { $lte: hcost } }],
     };
   } else if (cityId && lcost) {
     query = {
       city_id: cityId,
-      $and: [{ price: { $gt: lcost } }],
+      $and: [{ price: { $gte: lcost } }],
     };
   } else if (cityId && languageId) {
     query = {
