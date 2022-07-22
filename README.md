@@ -44,7 +44,7 @@ Show Me Around is a platform where travelers from around the world hire local pe
 
 ### Filter - Profiles based on Interest (available interest_id = [1,2,3,4,5,6,7])
 
-> https://show-me-around-api.herokuapp.com/filter/3?interestId=4
+> https://show-me-around-api.herokuapp.com/filter/1?interestId=4
 
 ### Filter - Profiles based on Language (available language_id = [1,2,3,4,5,6,7,8])
 
