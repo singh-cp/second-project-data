@@ -8,7 +8,7 @@ const MongoDB = {
       if (error) {
         console.log(error);
       }
-      global.db = client.db("showMeAround");
+      global.db = await client.db("showMeAround");
       console.log("mongodb connection complete");
     });
   },
