@@ -10,6 +10,7 @@ const port = PORT || 5000;
 
 // MongoDB
 import MongoDB from "./config/mongoDB/mongoDB.js";
+MongoDB.connectToServer();
 
 // MongoClient.connect(MONGO_URL, (err, client) => {
 //   if (err) console.log(err);
@@ -43,8 +44,6 @@ app.use((error, request, response, next) => {
 
 // next(new Error("Specified Error"))
 
-MongoDB.connectToServer().then(
-  app.listen(port, () => {
-    console.log(`listing on port ${port}`);
-  })
-);
+app.listen(port, () => {
+  console.log(`listing on port ${port}`);
+});
